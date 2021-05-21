@@ -1,0 +1,24 @@
+/* Simple CSS for styling the reddit news feed module */
+
+body {
+    color: #aaaaaa;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: black;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 5.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 0.9em;
+    padding-top: 25px;
+    z-index: 1000;
+}

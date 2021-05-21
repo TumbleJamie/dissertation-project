@@ -1,0 +1,22 @@
+/* Simple CSS for styling the reddit picture module */
+
+body {
+    color: #aaaaaa;
+    -webkit-font-smoothing: antialiased; 
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: black;
+    display: table;
+    margin: 0 auto;
+    position: relative;
+}
+
+#image{
+    width: 250px;
+    height: 350px;
+    object-fit: fill;
+    z-index: 1000000;
+    border-radius: .2rem;
+    position: relative;
+    top: 0;
+
+}

@@ -1,0 +1,90 @@
+*{
+    cursor: none;
+   
+}
+
+/*
+    CSS for the main index page
+*/
+
+html {
+    overflow: hidden;
+    background-color: black;
+}
+
+body {
+    position: absolute;
+    height: calc(100% - 120px);
+    width: calc(100% - 120px);
+    color: #aaaaaa;
+    font-weight: 200;
+    font-size: 2em;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased; 
+    margin: 35px; 
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/* Hides the scroll bars on the iframes for the different modules */
+
+iframe {
+    overflow: hidden;
+}
+
+iframe[seamless]{
+    border: none;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* CSS selectors for the different modules and the areas that their iFrames are placed */
+
+#top-right{
+    position: absolute;
+    margin: -1px 0 0 -1px;
+    display: block;
+    top: 10px;
+    right: 1px;
+}
+
+.bottom-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+   
+}
+
+#feed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 850px;
+
+}
+
+#picture-feed {
+    position: relative;
+    left: 0px;
+    width: 300px;
+    margin-top: -2000px;
+    top: -110px;
+    z-index: 10000;
+}
+
+/* Animations that were taken out of the project in later development */
+
+.fadeInAndOut {
+    opacity: 1;
+    animation: fade 2s linear;
+}
+
+
+@keyframes fade {
+  0%,100% { opacity: 1 }
+  50% { opacity: 0 }
+}

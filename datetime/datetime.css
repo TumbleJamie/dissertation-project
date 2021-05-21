@@ -1,0 +1,23 @@
+/* Simple CSS for styling the date/time module */
+
+
+body {
+    background: black;
+    color: #aaaaaa;
+}
+
+#datetime{
+    position: relative;
+    margin: -1px 0 0 -1px;
+    display: block;
+    font-size: 55px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#day{
+    position: relative;
+    margin: -1px 0 0 -1px;
+    display: block;
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+}

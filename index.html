@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Mirror</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">   
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--The body uses iframes to display each module in its own container - this makes it easy 
+    to style them individually, as well as easy to move around and re-size -->
+    <div class="top-area">
+        <div class="top-left"> 
+            <iframe src="modules/datetime/datetime.html" seamless></iframe> 
+        </div>
+
+        <div id="top-right"> 
+            <iframe src="modules/weathertoday/weathertoday.html" seamless onload="this.style.height=(this.contentWindow.document.body.scrollHeight+100)+'px';"></iframe>
+        </div>
+
+        <div class="top-middle">
+                <iframe src="modules/onthisday/onthisday.html" seamless onload="this.style.height=(this.contentWindow.document.body.scrollHeight+100)+'px';"></iframe>
+        </div>
+    </div>
+
+    <div class="upper">
+        <iframe src="modules/weatherforecast/weatherforecast.html" seamless height="400" id="weather-forecast"></iframe> 
+    </div>
+
+    <div class="middle">
+        <iframe src="modules/redditpicture/redditpicture.html" id = "picture-feed" width="100%" seamless scrolling="no" onload="this.style.height=(this.contentWindow.document.body.scrollHeight)+'px';"></iframe>
+    </div>
+
+    <div class="lower">
+        <div class="bottom-area">
+            <div class="bottom-middle"><iframe src="modules/redditfeed/redditfeed.html" id = "feed" width="100%" seamless scrolling="no"></iframe><div class="container"></div></div>
+        </div>
+    </div>
+</body>
+<!--This index is what is displayed when Electron is run using NPM START, however the json file is configed to work with the client's raspberry pi and as such will not display on any other machine
+this can be seen in the package.json file -->
+</html>

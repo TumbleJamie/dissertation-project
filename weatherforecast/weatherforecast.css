@@ -1,0 +1,40 @@
+/* Simple CSS for styling the weather forecast module */
+
+body {
+    background: black;
+    color: #aaaaaa;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: right;
+}
+
+.weather-today h1 {
+    font-size: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 5px;
+
+}
+
+#desc, #loc{
+    font-size: 1.25em;
+}
+
+#weather-icon{
+    height: 35px;
+    width: auto;
+
+}
+
+#container0, #container1, #container2, #container3, #container4{
+    display: grid;
+    grid-template-rows: auto;
+    height: 100%;
+    padding-right: 0px;
+    padding-left: 10px;
+    padding-bottom: 25px;
+}
+
+#weather0, #weather1, #weather2, #weather3, #weather4, #desc0, #desc1, #desc2, #desc3, #desc4 {
+    top: 25%;
+    left: 25;
+    padding: 2px;
+}
